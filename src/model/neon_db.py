@@ -1,7 +1,8 @@
 import psycopg2
 from psycopg2 import pool
-import os
-from config import secret_config
+import sys
+sys.path.append("configuration")
+import secret_config
 from datetime import date
 
 # Datos de conexión

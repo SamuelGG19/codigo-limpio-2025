@@ -1,6 +1,7 @@
 import unittest
 import sys
-sys.path.append("src")
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.model.calculo_total import *
 
 class TestLiquidadorNomina(unittest.TestCase):

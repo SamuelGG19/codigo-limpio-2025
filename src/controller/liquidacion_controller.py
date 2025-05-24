@@ -1,8 +1,8 @@
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from model.models import Liquidacion, Empleado
-from model.calculo_total import calculo_total, ErrorSalarioN, ErrorDeduccionesM, ErrorHorasExtra, ErrorHorasNegativas, ErrorBonosNegativos, ErrorDeduccionNegativa
+from src.model.models import Liquidacion, Empleado
+from src.model.calculo_total import calculo_total, ErrorSalarioN, ErrorDeduccionesM, ErrorHorasExtra, ErrorHorasNegativas, ErrorBonosNegativos, ErrorDeduccionNegativa
 from datetime import date
 
 class LiquidacionController:
