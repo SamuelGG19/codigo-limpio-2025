@@ -1,10 +1,14 @@
 import psycopg2
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from configuration import secret_config
 
 # Datos de conexión
-PGHOST='ep-snowy-lab-a4mk1kuj-pooler.us-east-1.aws.neon.tech'
-PGDATABASE='liquidador_nomina'
-PGUSER='neondb_owner'
-PGPASSWORD='npg_Tg1KxQSat3Yl'
+PGHOST=secret_config.PGHOST
+PGDATABASE=secret_config.PGDATABASE
+PGUSER=secret_config.PGUSER
+PGPASSWORD=secret_config.PGPASSWORD
 
 # Establecer conexión
 try:
