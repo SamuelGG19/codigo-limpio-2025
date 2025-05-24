@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <p>Búsqueda para el empleado con el ID: {{id_empleado}}</p>
+
+        <table>
+            <thead style="font-weight: bold;">
+                <tr>
+                    <td>Fecha</td>
+                    <td>Salario Base</td>
+                    <td>Horas Diurnas</td>
+                    <td>Horas Nocturnas</td>
+                    <td>Bonos Extra</td>
+                    <td>Deduccion Adicional</td>
+                    <td>Auxilio de Transporte</td>
+                    <td>Total Nómina</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    {% for liquidacion in liquidaciones %}
+                        <td>{{liquidacion.fecha}}</td>
+                        <td>{{liquidacion.salario_base}}</td>
+                        <td>{{liquidacion.horas_diurnas}}</td>
+                        <td>{{liquidacion.horas_nocturnas}}</td>
+                        <td>{{liquidacion.bonos_extra}}</td>
+                        <td>{{liquidacion.deduccion_adicional}}</td>
+                        <td>{{liquidacion.auxilio_transporte}}</td>
+                        <td>{{liquidacion.total_nomina}}</td>
+                    {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
