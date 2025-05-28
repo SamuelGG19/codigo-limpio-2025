@@ -25,54 +25,63 @@
             </div>
         </form>
     {% elif option == "3" %}
-        <form action="/insertar_empleado">
+        <form action="/crear_empleado">
             <h1>Insertar un empleado</h1>
             <p>Ingrese los datos del empleado:</p>
 
             <div>
-                <!--
                 Nombre: <input type="text" name="nombre"><br>
                 Documento: <input type="text" name="documento"><br>
-                Cargo: <input type="text" name="cargo"><br>
-                Salario: <input type="text" name="salario"><br>
-                -->
+                Salario Base: <input type="text" name="salario_base"><br>
+                Fecha ingreso: <input type="text" name="fecha_ingreso"><br>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
             </div>
         </form>
     {% elif option == "4" %}
-        <form action="/insertar_liquidacion">
+        <form action="/crear_liquidacion">
             <h1>Insertar una liquidación</h1>
             <p>Ingrese los datos de la liquidación:</p>
 
             <div>
-                <!--
-                ID Empleado: <input type="text" name="id_empleado"><br>
-                Mes: <input type="text" name="mes"><br>
-                Año: <input type="text" name="anio"><br>
-                Total Devengado: <input type="text" name="total_devengado"><br>
-                Total Deducciones: <input type="text" name="total_deducciones"><br>
-                -->
+                ID Empleado: <input type="text" name="empleado_id"><br>
+                Salario Base: <input type="text" name="salario_base"><br>
+                Horas diurnas: <input type="text" name="horas_diurnas"><br>
+                Horas nocturnas: <input type="text" name="horas_nocturnas"><br>
+                Bonos extra: <input type="text" name="bonos_extra"><br>
+                Deducción adicional: <input type="text" name="deduccion_adicional"><br>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
             </div>
         </form>
     {% elif option == "5" %}
-        <form action="/modificar_empleado">
-            <h1>Modificar un empleado</h1>
-            <p>Ingrese el documento del empleado:</p>
+        <form action="/borrar_empleado">
+            <h1>Borrar un empleado</h1>
+            <p>Ingrese el id del empleado a eliminar:</p>
 
             <div>
-                <!--
-                Documento: <input type="text" name="documento">
-                -->
+                ID: <input type="text" name="id">
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
             </div>
         </form>
     {% elif option == "6" %}
-        <form action="/modificar_liquidacion">
-            <h1>Modificar una liquidación</h1>
-            <p>Ingrese el ID de la liquidación:</p>
+        <form action="/borrar_liquidacion">
+            <h1>Borrar una liquidación</h1>
+            <p>Ingrese el ID de la liquidación a eliminar:</p>
 
             <div>
-                <!--
-                ID Liquidación: <input type="text" name="id_liquidacion">
-                -->
+                ID: <input type="text" name="id">
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
             </div>
         </form>
     {% endif %}

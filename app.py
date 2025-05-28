@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask
 
 import sys
 sys.path.append("src")
@@ -8,5 +8,4 @@ app = Flask(__name__)
 app.register_blueprint(blueprint.blueprint)
 
 if __name__ == "__main__":
-    app.run(debug=True)
-    
+    app.run()
