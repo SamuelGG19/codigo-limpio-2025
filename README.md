@@ -211,7 +211,9 @@ dist/kivy_gui/kivy_gui.exe
 
 ### Aplicación Web
 
-Páginas web sincronizadas a la base de datos creada previamente.
+[Calculador de Nómina](https://calculador-de-nomina.onrender.com)
+
+Página web sincronizada a la base de datos creada previamente.
 
 - Si no tiene Flask instalado:
    ```sh
