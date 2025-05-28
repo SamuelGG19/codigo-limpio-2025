@@ -81,6 +81,7 @@ El proyecto sigue una arquitectura modular para garantizar un código mantenible
 │── app.py                              # Inicializar aplicación web
 │── README.md                           # Documentación del proyecto
 │── requirements.txt                    # Requerimientos para el servidor web
+│── secret_config_sample.py             # Datos de conexión a la DB
 ```
 
 ## 🗄️ Configuración de la Base de Datos (Neon DB)
