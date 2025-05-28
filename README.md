@@ -5,6 +5,8 @@ Hecho por:
 - Valery Monsalve Correa
 - Juan Sebastian Pinilla Giraldo (Interfaz gráfica)
 - Juan Vallejo (Interfaz gráfica)
+- Samuel Gil (Aplicación Web)
+- Tomás Mercado (Aplicación Web)
 
 Este proyecto ayuda a poder calcular la Liquidación de Nómina de Empleados.
 
@@ -73,7 +75,12 @@ El proyecto sigue una arquitectura modular para garantizar un código mantenible
 │   │── test_db.py                      # Tests para la base de datos
 │   │── TestLiquidadorNomina.py         # Tests para la liquidación
 │
+│── templates/                          # Templates HTML para aplicación web
+│
+│── .gitignore                          # Archivos ignorados por git
+│── app.py                              # Inicializar aplicación web
 │── README.md                           # Documentación del proyecto
+│── requirements.txt                    # Requerimientos para el servidor web
 ```
 
 ## 🗄️ Configuración de la Base de Datos (Neon DB)
@@ -201,6 +208,27 @@ python src/view/gui/kivy_gui.py
 dist/kivy_gui/kivy_gui.exe
 ```
 
+### Aplicación Web
+
+Páginas web sincronizadas a la base de datos creada previamente.
+
+- Si no tiene Flask instalado:
+   ```sh
+   pip install flask
+   ```
+
+- Navegar al directorio del proyecto:
+   ```sh
+   cd ruta/del/proyecto
+   ```
+
+- Ejeecutar el siguiente comando:
+  ```sh
+   python app.py
+   ```
+
+- Seguir las instrucciones para ingresar los datos necesarios. (Al ingresar fechas use el formato dd-mm-yyyy)
+
 ## 🧪 Ejecución de Pruebas Unitarias
 
 Para verificar el correcto funcionamiento del sistema:
@@ -257,6 +285,8 @@ El sistema realiza las siguientes validaciones:
 - **Valery Monsalve Correa**: Desarrollo core
 - **Juan Sebastian Pinilla Giraldo**: Interfaz gráfica
 - **Juan Vallejo**: Interfaz gráfica
+- **Samuel Gil**: Aplicación Web
+- **Tomás Mercado**: Aplicación Web
 
 
 
